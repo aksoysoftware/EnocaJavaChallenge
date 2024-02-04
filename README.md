@@ -5,6 +5,11 @@
 ## Proje Bilgileri
 • Java 17
 • Spring Boot 3.2.2
+• Spring Data JPA ve JDBC
+• MySQL 
+• Spring Web
+• Springfox Swagger UI
+• Spring Boot Test Starter
 
 
 
@@ -31,13 +36,13 @@ Oluşturulan ürün bilgileri ve ürünün oluşturulma tarihi veritabanına kay
 
 ### /carts/{customerId}/addProduct
 Müşterinin sepeti yoksa, müşteri için yeni bir sepet oluşturulur.
-Belirtilen ürün bulunamazsa veya istenen miktar mevcut stoku aşarsa, işlem başarısız olacaktır.
+Belirtilen ürün bulunamazsa veya istenen miktar mevcut stoku aşarsa, işlem başarısız olur.
 Ürün ekledikten sonra sepetin toplam fiyatı güncellenir.
-Eklenen ürünün stoku buna göre azaltılır.
+Eklenen ürünün stoku eklenen ürün sayısına göre göre azaltılır.
 
 
 ### /carts/{customerId}/removeProduct
-Sepette belirtilen ürün bulunamazsa veya istenen miktar, sepetteki mevcut miktardan fazlaysa işlem başarısız olacaktır.
+Sepette belirtilen ürün bulunamazsa veya istenen miktar, sepetteki mevcut miktardan fazlaysa işlem başarısız olur.
 Ürün çıkarıldıktan sonra sepetin toplam fiyatı güncellenir.
 Çıkarılan ürünün stoku buna göre artırılır.
 
@@ -54,8 +59,8 @@ Spesifik bir kullanıcının sepetini getirir.
 ![image](https://github.com/aksoysoftware/EnocaJavaChallenge/assets/99371051/d797f292-64ee-49b7-8046-4cb8a58a5c31)
 
 ### /orders/placeOrderCart(POST)
-Oluşturulan sipariş bilgileri veritabanına kaydedilir.
-İlgili alışveriş sepeti boşaltılır.
+Oluşturulan sipariş bilgileri keydedilir.
+işlem yapılan sepet boşaltılır.
 
 
 
