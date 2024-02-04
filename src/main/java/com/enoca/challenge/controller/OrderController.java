@@ -21,7 +21,7 @@ public class OrderController {
     @Autowired
     private OrderService orderService;
 
-    @PostMapping("/place-order/{cartId}")
+    @PostMapping("/placeOrder/{cartId}")
     public ResponseEntity<String> placeOrder(@PathVariable Long cartId) {
         Order placedOrder = orderService.placeOrder(cartId);
 
@@ -48,6 +48,17 @@ public class OrderController {
         List<Order> orders = orderService.getOrdersByCustomerId(customerId);
         return ResponseEntity.ok(orders);
     }
+    @PostMapping("/placeOrderByCustomer/{customerId}")
+    public ResponseEntity<String> placeOrderByCustomer(@PathVariable Long customerId) {
+        Order placedOrder = orderService.placeOrderCustomer(customerId);
+
+        if (placedOrder != null) {
+            return ResponseEntity.status(HttpStatus.CREATED).body("Order successfully created");
+        } else {
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Failed to place order");
+        }
+    }
+
 
    
 

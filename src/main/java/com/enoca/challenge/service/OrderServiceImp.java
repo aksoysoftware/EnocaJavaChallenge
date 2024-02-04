@@ -10,9 +10,11 @@ import org.springframework.stereotype.Service;
 import com.enoca.challenge.data.entity.Cart;
 import com.enoca.challenge.data.entity.CartItem;
 import com.enoca.challenge.data.entity.CartStatus;
+import com.enoca.challenge.data.entity.Customer;
 import com.enoca.challenge.data.entity.Order;
 import com.enoca.challenge.data.entity.OrderItem;
 import com.enoca.challenge.data.repository.CartRepository;
+import com.enoca.challenge.data.repository.CustomerRepository;
 import com.enoca.challenge.data.repository.OrderRepository;
 
 @Service
@@ -28,6 +30,8 @@ public class OrderServiceImp implements OrderService {
     @Autowired
     private CartService cartService;
     
+    @Autowired
+    private CustomerRepository customerRepository;
     
 
     @Override
@@ -73,6 +77,47 @@ public class OrderServiceImp implements OrderService {
         return null;
         }
 
+    @Override
+    public Order placeOrderCustomer(Long customerId) {
+        Customer customer = customerRepository.findById(customerId).orElse(null);
+
+        if (customer != null && customer.getCart() != null) {
+            Cart cart = customer.getCart();
+
+            Order order = new Order();
+            order.setCustomer(customer);
+
+            List<CartItem> cartItems = cart.getCartItems();
+            List<OrderItem> orderItems = new ArrayList<>();
+            double totalOrderPrice = 0.0;
+
+            for (CartItem cartItem : cartItems) {
+                OrderItem orderItem = new OrderItem();
+                orderItem.setProduct(cartItem.getProduct());
+                orderItem.setQuantity(cartItem.getQuantity());
+
+                double itemTotalPrice = cartItem.getProduct().getPrice() * cartItem.getQuantity();
+                orderItem.setPriceAtOrder(itemTotalPrice);
+
+                totalOrderPrice += itemTotalPrice;
+                orderItems.add(orderItem);
+            }
+
+            order.setItems(orderItems);
+            order.setTotalPrice(totalOrderPrice);
+
+            Order savedOrder = orderRepository.save(order);
+
+            cartService.emptyCart(cart.getId());
+            cart.setStatus(CartStatus.COMPLETED);
+            cartRepository.save(cart);
+
+            return savedOrder;
+        }
+        return null;
+    }
+
+    
     @Override
     public Order getOrder(Long orderId) {
         Optional<Order> optionalOrder = orderRepository.findById(orderId);

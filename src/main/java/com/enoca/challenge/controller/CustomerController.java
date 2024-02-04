@@ -31,11 +31,8 @@ public class CustomerController {
 
 	@PostMapping
     public ResponseEntity<Customer> addCustomer(@RequestBody AddCustomerRequest customer) {
-        Customer newCustomer = new Customer();
-        newCustomer.setName(customer.getName());
-        newCustomer.setEmail(customer.getEmail());
-        newCustomer.setPhoneNumber(customer.getPhoneNumber());
-        Customer addedCustomer = customerService.addCustomer(newCustomer);
+     
+        Customer addedCustomer = customerService.addCustomer(customer);
         return ResponseEntity.ok(addedCustomer);
     }
     

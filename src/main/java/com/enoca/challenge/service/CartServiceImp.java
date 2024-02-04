@@ -80,6 +80,8 @@ public class CartServiceImp implements CartService {
             if (customer != null) {
                 
                 cart.setCustomer(customer);
+                customer.setCart(cart);
+                
             } else {
                
                 return null;
@@ -131,7 +133,7 @@ public class CartServiceImp implements CartService {
                 
                 product.setStock(product.getStock() - addProductRequest.getQuantity());
                 productRepository.save(product);
-
+                
                 return cartRepository.save(cart);
             }
         }
@@ -176,7 +178,9 @@ public class CartServiceImp implements CartService {
 
                     
                     product.setStock(product.getStock() + requestedQuantity);
-
+                    
+                   
+                    
                     return cartRepository.save(cart);
                 } else {
                     
