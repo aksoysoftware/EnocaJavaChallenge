@@ -39,7 +39,8 @@ Spesifik bir kullanıcının sepetini getirir.
 
 
 ![image](https://github.com/aksoysoftware/EnocaJavaChallenge/assets/99371051/d797f292-64ee-49b7-8046-4cb8a58a5c31)
-![image](https://github.com/aksoysoftware/EnocaJavaChallenge/assets/99371051/8a32700e-3ef6-4401-a9ae-9438eafd32ef)
+![image](https://github.com/aksoysoftware/EnocaJavaChallenge/assets/99371051/c14d221a-a1a8-4d5a-b18f-ae928f97082d)
+
 
 
 ### /orders/placeOrderCart(POST) & /placeOrderByCustomer/{customerId}(POST)
