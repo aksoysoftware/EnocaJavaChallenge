@@ -7,24 +7,21 @@
 
 
 
-![image](https://github.com/aksoysoftware/EnocaJavaChallenge/assets/99371051/66d57d8d-c463-403c-a79f-057329d403c2)
 
 
 
-
-
-![image](https://github.com/aksoysoftware/EnocaJavaChallenge/assets/99371051/3a15e760-37b9-47d3-92bd-a5530aed0293)
-
-
-
-![Uploading image.png…]()
+![image](https://github.com/aksoysoftware/EnocaJavaChallenge/assets/99371051/e077e409-73c1-48b5-aa6f-cfa89ecba949)
 
 
 
+![image](https://github.com/aksoysoftware/EnocaJavaChallenge/assets/99371051/1e22e95a-1cdb-4689-b128-542997dec158)
 
 
 
+![image](https://github.com/aksoysoftware/EnocaJavaChallenge/assets/99371051/53b4d068-1c85-4890-a940-39fbae69d2aa)
 
+
+![image](https://github.com/aksoysoftware/EnocaJavaChallenge/assets/99371051/c5680e3a-44d6-4ff6-ac21-8490718a7d75)
 
 
 
