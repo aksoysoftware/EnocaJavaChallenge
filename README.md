@@ -3,13 +3,13 @@
 
 
 ## Proje Bilgileri
-• Java 17
-• Spring Boot 3.2.2
-• Spring Data JPA ve JDBC
-• MySQL 
-• Spring Web
-• Springfox Swagger UI
-• Spring Boot Test Starter
+#### • Java 17
+#### • Spring Boot 3.2.2
+#### • Spring Data JPA ve JDBC
+#### • MySQL 
+#### • Spring Web
+#### • Springfox Swagger UI
+#### • Spring Boot Test Starter
 
 
 
