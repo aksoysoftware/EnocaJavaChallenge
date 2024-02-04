@@ -1,27 +1,36 @@
-# Proje Bilgileri
- •	Java 17
- •	Spring Boot 3.2.2
-
-![image](https://github.com/aksoysoftware/EnocaJavaChallenge/assets/99371051/2c539c36-ed68-4988-9bd0-25f4fe6fe521)
+ 
+![image](https://github.com/aksoysoftware/EnocaJavaChallenge/assets/99371051/3f78d5bc-d738-44c6-8b77-8c72e676ece1)
 
 
 
+ 
+  
+![image](https://github.com/aksoysoftware/EnocaJavaChallenge/assets/99371051/794ead3b-e634-489f-b6c4-dde1652cd6d9)
+
+ ![image](https://github.com/aksoysoftware/EnocaJavaChallenge/assets/99371051/29ddb4cf-b363-4982-8aff-cd11ff25c4c2)
+
+ 
+![image](https://github.com/aksoysoftware/EnocaJavaChallenge/assets/99371051/d6f444ca-e11f-4b70-a29c-095c1d38c676)
+
+
+![image](https://github.com/aksoysoftware/EnocaJavaChallenge/assets/99371051/d797f292-64ee-49b7-8046-4cb8a58a5c31)
+
+
+
+ 
+
+ 
 
 
 
 
-![image](https://github.com/aksoysoftware/EnocaJavaChallenge/assets/99371051/e077e409-73c1-48b5-aa6f-cfa89ecba949)
+ 
+
+ 
 
 
 
-![image](https://github.com/aksoysoftware/EnocaJavaChallenge/assets/99371051/1e22e95a-1cdb-4689-b128-542997dec158)
 
-
-
-![image](https://github.com/aksoysoftware/EnocaJavaChallenge/assets/99371051/53b4d068-1c85-4890-a940-39fbae69d2aa)
-
-
-![image](https://github.com/aksoysoftware/EnocaJavaChallenge/assets/99371051/c5680e3a-44d6-4ff6-ac21-8490718a7d75)
 
 
 
