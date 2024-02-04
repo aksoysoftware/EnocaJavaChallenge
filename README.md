@@ -1,4 +1,11 @@
- 
+# Enoca Java Challenge 
+
+## Proje Bilgileri
+• Java 17
+• Spring Boot 3.2.2
+
+
+
 ![image](https://github.com/aksoysoftware/EnocaJavaChallenge/assets/99371051/3f78d5bc-d738-44c6-8b77-8c72e676ece1)
 
 
@@ -14,6 +21,19 @@
 
 
 ![image](https://github.com/aksoysoftware/EnocaJavaChallenge/assets/99371051/d797f292-64ee-49b7-8046-4cb8a58a5c31)
+
+
+
+## Dependencies
+•	Spring Boot Starter Data JDBC
+•	Spring Boot Starter Data JPA
+•	Spring Boot Starter JDBC
+•	Spring Boot Starter Web
+•	Spring Boot DevTools
+•	MySQL Connector
+•	Lombok
+•	Springdoc OpenAPI Starter WebMVC UI
+•	springfox-boot-starter
 
 
 
